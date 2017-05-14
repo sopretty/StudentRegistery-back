@@ -1,1 +1,6 @@
+hello\UserServiceImpl.class
+hello\UserService.class
 hello\Application.class
+hello\User.class
+hello\LoginController.class
+hello\UserRepository.class

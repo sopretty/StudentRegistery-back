@@ -20,7 +20,7 @@ public interface UserService {
     
     void deleteUser(User p);
 
-    User getOne(Long id);
+    User getOne(String id);
     
     List<User> getAll();
     

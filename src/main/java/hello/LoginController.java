@@ -1,7 +1,6 @@
 package hello;
 
-import java.util.ArrayList;
-import java.util.List;
+import javax.servlet.http.HttpServletResponse;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.bind.annotation.CrossOrigin;
@@ -12,7 +11,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("/rest")
+@RequestMapping("/users")
 @Configuration
 @CrossOrigin(origins = "http://localhost:4200", maxAge = 3600)
 class LoginController {
@@ -23,27 +22,20 @@ class LoginController {
     @RequestMapping(value = "/{id}",
             method = RequestMethod.GET,
             produces = "application/json")
-    public List<User> get(@PathVariable String id) {
-        List<User> users = new ArrayList<User>();
-        if (!this.isNumeric(id)) {
-            for (User p : us.getAll()) {
-                users.add(p);
-            }
-        } else {
-            users.add(us.getOne(new Long(id)));
+    public User get(@PathVariable String id, HttpServletResponse resp) {
+        User u = this.us.getOne(id);
+        if(u == null){
+            resp.setStatus(HttpServletResponse.SC_NOT_FOUND);
         }
-        return users;
+        return u;
     }
 
     @RequestMapping(value = "/{id}",
             method = RequestMethod.DELETE,
             produces = "application/json")
     public Iterable<User> delete(@PathVariable String id) {
-        if (isNumeric(id)) {
-            this.us.deleteUser(this.us.getOne(new Long(id)));
-            return this.us.getAll();
-        }
-        return null;
+        this.us.deleteUser(this.us.getOne(id));
+        return this.us.getAll();
     }
 
     @RequestMapping(
@@ -57,12 +49,7 @@ class LoginController {
             method = RequestMethod.POST,
             consumes = "application/json",
             produces = "application/json")
-    public User createPokemon(@RequestBody User p) {
+    public User createUser(@RequestBody User p) {
         return this.us.createUser(p);
-    }
-
-    //Test si un string est numérique
-    public boolean isNumeric(String s) {
-        return s.matches("[-+]?\\d*\\.?\\d+");
     }
 }

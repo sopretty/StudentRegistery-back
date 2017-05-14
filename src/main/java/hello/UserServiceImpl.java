@@ -21,7 +21,7 @@ public class UserServiceImpl implements UserService {
     UserRepository rp;
     
     @Override
-    public User getOne(Long id) {
+    public User getOne(String id) {
         return this.rp.findOne(id);
     }
     
