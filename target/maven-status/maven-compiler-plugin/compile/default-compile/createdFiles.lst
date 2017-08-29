@@ -1,6 +1,8 @@
-hello\UserServiceImpl.class
-hello\UserService.class
-hello\Application.class
-hello\User.class
-hello\LoginController.class
-hello\UserRepository.class
+fst\lmfi\Services\UserService.class
+fst\lmfi\Services\UserServiceImpl.class
+fst\lmfi\Entities\Profile.class
+fst\lmfi\Entities\User.class
+fst\lmfi\Application.class
+fst\lmfi\Repositories\UserRepository.class
+fst\lmfi\Entities\Connexion.class
+fst\lmfi\Controllers\LoginController.class

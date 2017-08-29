@@ -1,5 +1,6 @@
-package hello;
+package fst.lmfi;
 
+import fst.lmfi.Repositories.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;

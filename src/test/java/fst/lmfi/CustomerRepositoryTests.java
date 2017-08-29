@@ -1,4 +1,4 @@
-package hello;
+package fst.lmfi;
 /*
  * Copyright 2016 the original author or authors.
  *
@@ -15,6 +15,8 @@ package hello;
  * limitations under the License.
  */
 
+import fst.lmfi.Repositories.UserRepository;
+import fst.lmfi.Entities.User;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;

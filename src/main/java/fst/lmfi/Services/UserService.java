@@ -3,8 +3,9 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package hello;
+package fst.lmfi.Services;
 
+import fst.lmfi.Entities.User;
 import java.util.List;
 
 /**
@@ -23,6 +24,5 @@ public interface UserService {
     User getOne(String id);
     
     List<User> getAll();
-    
     
 }

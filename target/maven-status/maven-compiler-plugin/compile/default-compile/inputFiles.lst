@@ -1,6 +1,8 @@
-C:\Users\mathieu.jeanmougin\Documents\angular2\StudentRegistery-back\src\main\java\hello\Application.java
-C:\Users\mathieu.jeanmougin\Documents\angular2\StudentRegistery-back\src\main\java\hello\UserServiceImpl.java
-C:\Users\mathieu.jeanmougin\Documents\angular2\StudentRegistery-back\src\main\java\hello\LoginController.java
-C:\Users\mathieu.jeanmougin\Documents\angular2\StudentRegistery-back\src\main\java\hello\User.java
-C:\Users\mathieu.jeanmougin\Documents\angular2\StudentRegistery-back\src\main\java\hello\UserRepository.java
-C:\Users\mathieu.jeanmougin\Documents\angular2\StudentRegistery-back\src\main\java\hello\UserService.java
+C:\Users\mathieu.jeanmougin\Documents\projet-perso\StudentRegistery-back\src\main\java\fst\lmfi\Controllers\LoginController.java
+C:\Users\mathieu.jeanmougin\Documents\projet-perso\StudentRegistery-back\src\main\java\fst\lmfi\Entities\User.java
+C:\Users\mathieu.jeanmougin\Documents\projet-perso\StudentRegistery-back\src\main\java\fst\lmfi\Entities\Connexion.java
+C:\Users\mathieu.jeanmougin\Documents\projet-perso\StudentRegistery-back\src\main\java\fst\lmfi\Services\UserServiceImpl.java
+C:\Users\mathieu.jeanmougin\Documents\projet-perso\StudentRegistery-back\src\main\java\fst\lmfi\Application.java
+C:\Users\mathieu.jeanmougin\Documents\projet-perso\StudentRegistery-back\src\main\java\fst\lmfi\Entities\Profile.java
+C:\Users\mathieu.jeanmougin\Documents\projet-perso\StudentRegistery-back\src\main\java\fst\lmfi\Repositories\UserRepository.java
+C:\Users\mathieu.jeanmougin\Documents\projet-perso\StudentRegistery-back\src\main\java\fst\lmfi\Services\UserService.java
