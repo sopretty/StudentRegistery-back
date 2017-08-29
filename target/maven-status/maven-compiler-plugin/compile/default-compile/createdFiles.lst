@@ -1,1 +1,4 @@
-hello\Application.class
+fr/univlorraine/entity/User.class
+fr/univlorraine/boundary/UserResource.class
+fr/univlorraine/Application.class
+fr/univlorraine/boundary/UserRepresentation.class
